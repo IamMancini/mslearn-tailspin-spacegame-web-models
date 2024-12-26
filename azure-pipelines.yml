@@ -1,5 +1,8 @@
 pool:
-  vmImage: 'ubuntu-20.04'
+  name: 'Default'    
+  demands:
+    - npm
+    - agent.name -equals AMANCINI
 
 variables:
   buildConfiguration: 'Release'
